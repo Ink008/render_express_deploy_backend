@@ -17,6 +17,12 @@ app.get('/', (req, res) => {
     })
 })
 
+app.get('/test', (req, res) => {
+    res.json({
+        message: "This is a Testing"
+    })
+})
+
 server.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
 });
